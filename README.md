@@ -71,3 +71,19 @@ export default defineConfig([
   },
 ])
 ```
+
+
+# E-Commerce Frontend
+Built with React, TypeScript, and Vite.
+
+## Tech Stack
+- React 18 + TypeScript
+- Vite
+- Redux Toolkit
+- React Router DOM
+- Axios
+
+## Run Locally
+1. Install dependencies: `npm install`
+2. Start dev server: `npm run dev`
+3. Open: http://localhost:5173
