@@ -1,89 +1,59 @@
-# React + TypeScript + Vite
+# 🛒 ShopEase — E-Commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-purple)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS%20v4-cyan)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-Currently, two official plugins are available:
+A modern, responsive e-commerce storefront built with React, 
+TypeScript, Redux Toolkit and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
 
-## React Compiler
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 18 + TypeScript |
+| State Management | Redux Toolkit |
+| Styling | Tailwind CSS v4 |
+| Routing | React Router v6 |
+| HTTP Client | Axios |
+| Forms | React Hook Form |
+| Notifications | React Toastify |
+| Icons | Lucide React |
+| Build Tool | Vite |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✅ Features
 
-## Expanding the ESLint configuration
+### Customer Features
+- 🔐 Register & Login with JWT
+- 🔍 Browse, search, filter & sort products
+- 🛒 Cart — add, update quantity, remove items
+- 📦 Place orders with delivery details
+- 📋 View order history & cancel orders
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Admin Features
+- 📊 Dashboard with store stats
+- 📦 Manage Products — Add, Edit, Delete
+- 📋 Manage Orders — View & update status
+- 👥 Manage Users — View all registered users
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repo
+```bash
+   git clone https://github.com/YOUR_USERNAME/ecommerce-frontend.git
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies
+```bash
+   npm install
 ```
+3. Start development server
+```bash
+   npm run dev
+```
+4. App runs on `http://localhost:5173`
 
+> ⚠️ Make sure the backend is running on `http://localhost:8085`
 
-# E-Commerce Frontend
-Built with React, TypeScript, and Vite.
-
-## Tech Stack
-- React 18 + TypeScript
-- Vite
-- Redux Toolkit
-- React Router DOM
-- Axios
-
-## Run Locally
-1. Install dependencies: `npm install`
-2. Start dev server: `npm run dev`
-3. Open: http://localhost:5173
+## 📁 Project Structure
